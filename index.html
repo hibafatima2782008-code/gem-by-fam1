@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gem By Fam | Everyday Luxury Jewelry</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <span class="logo-g">G</span>
+            <span class="logo-text">
+                <strong>GEM BY FAM</strong>
+                <small>EVERYDAY LUXURY</small>
+            </span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Shop</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">faq</a>
+        </nav>
+
+        <div class="header-icons">
+            <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
+            <button class="icon-btn cart-button" id="cartBtn" title="Cart">
+                🛍
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH BOX ================= -->
+    <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="Search jewelry...">
+        <button id="closeSearch">✕</button>
+    </div>
+
+
+    <!-- ================= HERO BANNER ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-slide active">
+            <img src="images/banner1.jpg" alt="Gem By Fam Jewelry">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+
+
+                <a href="#products" class="hero-btn">SHOP NOW</a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/banner2.jpg" alt="Luxury Jewelry Collection">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                
+                <a href="#categories" class="hero-btn">EXPLORE COLLECTION</a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/banner3.jpg" alt="Jewelry Collection">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                
+                <a href="#contact" class="hero-btn">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <span class="dot active-dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+    <section class="intro">
+        <p class="eyebrow">WELCOME TO GEM BY FAM</p>
+
+        <h2>Jewelry That Makes Every Moment Special</h2>
+
+        <p>
+            Gem by fam — Where elegance meets everyday luxury.
+            Discover thoughtfully curated jewelry designed to make you feel
+            confident, beautiful, and effortlessly unforgettable.
+        </p>
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section" id="categories">
+
+        <div class="section-heading">
+            <p class="eyebrow">EXPLORE</p>
+            <h2>Shop By Category</h2>
+        </div>
+
+        <div class="category-wrapper">
+
+
+            <div class="category-container" id="categoryContainer">
+
+                <a href="#necklaces" class="category-card">
+                    <div class="category-image">
+                        <img src="images/necklace1.jpg" alt="Necklaces">
+                    </div>
+                    <h3>Necklaces</h3>
+                </a>
+
+                <a href="#rings" class="category-card">
+                    <div class="category-image">
+                        <img src="images/rings.jpg" alt="Rings">
+                    </div>
+                    <h3>Rings</h3>
+                </a>
+
+                <a href="#bracelets" class="category-card">
+                    <div class="category-image">
+                        <img src="images/bracelets.jpg" alt="Bracelets">
+                    </div>
+                    <h3>Bracelets</h3>
+                </a>
+
+                <a href="#earrings" class="category-card">
+                    <div class="category-image">
+                        <img src="images/earrings.jpg" alt="Earrings">
+                    </div>
+                    <h3>Earrings</h3>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <main id="products">
+
+
+        <!-- NECKLACES -->
+        <section class="product-section" id="necklaces">
+
+            <div class="section-heading">
+                <p class="eyebrow">COLLECTION</p>
+                <h2>Necklaces</h2>
+            </div>
+
+            <div class="products-wrapper">
+
+
+                <div class="products-container" id="necklaceProducts">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="tag">NEW</span>
+                            <img src="images/necklace1.jpg" alt="Elegant Gold Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Gold Necklace</h3>
+                            <p>Delicate everyday necklace with a timeless finish.</p>
+                            <strong>PKR 700</strong>
+                            <button class="add-cart" data-name="Elegant Gold Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace2.jpg" alt="Golden Pearl Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>Golden Pearl Necklace</h3>
+                            <p>Elegant pearl-inspired design for special occasions.</p>
+                            <strong>PKR 499</strong>
+                            <button class="add-cart" data-name="Golden Pearl Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace3.jpg" alt="Classic Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Necklace</h3>
+                            <p>Simple, elegant and easy to style.</p>
+                            <strong>PKR 799</strong>
+                            <button class="add-cart" data-name="Classic Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace4.jpg" alt="Luxury Pendant">
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Pendant</h3>
+                            <p>A graceful pendant for an effortlessly polished look.</p>
+                            <strong>PKR 399</strong>
+                            <button class="add-cart" data-name="Luxury Pendant">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace6.jpg" alt="Classic Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>lucky tag Necklace</h3>
+                            <p>Simple, elegant and easy to style.</p>
+                            <strong>PKR 999</strong>
+                            <button class="add-cart" data-name="Classic Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+                
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace7.jpg" alt="Classic Necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>black square Necklace</h3>
+                            <p>A refined chain necklace with a sleek black square pendant, designed for a simple yet
+                                effortlessly stylish look.</p>
+                            <strong>PKR 1199</strong>
+                            <button class="add-cart" data-name="Classic Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace8.jpg" alt="heart necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>heart necklace</h3>
+                            <p>A chain necklace with a sleek heart-shaped pendant, designed for a simple yet
+                                effortlessly stylish look.</p>
+                            <strong>PKR 500</strong>
+                            <button class="add-cart" data-name="heart Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+                      <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace9.jpg" alt="heart necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>korean pink heart shape necklace</h3>
+                            <p>A chain necklace with a sleek heart-shaped pendant, designed for a simple yet
+                                effortlessly stylish look.</p>
+                            <strong>PKR 900</strong>
+                            <button class="add-cart" data-name="heart chain Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+                         <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/necklace5.jpg" alt="heart necklace">
+                        </div>
+                        <div class="product-info">
+                            <h3>choker necklace</h3>
+                            <p>choker necklace design modern jwelery.</p>
+                            <strong>PKR 600</strong>
+                            <button class="add-cart" data-name="choker Necklace">Add to Cart</button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RINGS -->
+        <section class="product-section" id="rings">
+
+            <div class="section-heading">
+                <p class="eyebrow">COLLECTION</p>
+                <h2>Rings</h2>
+            </div>
+
+            <div class="products-wrapper">
+
+                <div class="products-container" id="ringProducts">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="tag">BEST SELLER</span>
+                            <img src="images/ring1.jpg" alt="Classic Gold Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Gold Ring</h3>
+                            <p>A minimal ring designed for everyday elegance.</p>
+                            <strong>PKR 299</strong>
+                            <button class="add-cart" data-name="Classic Gold Ring">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                          <span class="tag">POPULAR</span>
+                            <img src="images/ring2.jpg" alt="Elegant Stone Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Stone Ring</h3>
+                            <p>Beautiful statement ring with a delicate design.</p>
+                            <strong>PKR 599</strong>
+                            <button class="add-cart" data-name="Elegant Stone Ring">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring3.jpg" alt="Minimal Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Minimal Ring</h3>
+                            <p>Clean and sophisticated design for daily wear.</p>
+                            <strong>PKR 499</strong>
+                            <button class="add-cart" data-name="Minimal Ring">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring4.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>Statement Ring</h3>
+                            <p>A beautiful piece to complete your look.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="Statement Ring">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring5.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>gemstone ring</h3>
+                            <p>A beautiful piece to complete your look.</p>
+                            <strong>PKR 1000</strong>
+                            <button class="add-cart" data-name="gemstone ring">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring6.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>butterfly ring</h3>
+                            <p>simply,classy and elegant ring.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="butterfly ring">Add to Cart</button>
+                        </div>
+                    </article>
+             <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring7.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3>2 korean rings</h3>
+                            <p>simply,classy and elegant rings.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="2 korean rings ring">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring8.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3> sparkling olive leaf sterling rings</h3>
+                            <p>simply,classy and elegant rings.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="sparkling olive leaf starling ring">Add to Cart</button>
+                        </div>
+                    </article>
+                     <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/ring9.jpg" alt="Statement Ring">
+                        </div>
+                        <div class="product-info">
+                            <h3> korean style daisy flower rings</h3>
+                            <p>stylish and perfect for every look.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="korean style daisy flower ring">Add to Cart</button>
+                        </div>
+                    </article>
+        </section>
+
+
+        <!-- BRACELETS -->
+        <section class="product-section" id="bracelets">
+
+            <div class="section-heading">
+                <p class="eyebrow">COLLECTION</p>
+                <h2>Bracelets</h2>
+            </div>
+
+            <div class="products-wrapper">
+
+
+                <div class="products-container" id="braceletProducts">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelets1.jpg" alt="Delicate Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>Delicate Bracelet</h3>
+                            <p>A soft and elegant bracelet for everyday styling.</p>
+                            <strong>PKR 900</strong>
+                            <button class="add-cart" data-name="Delicate Bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="tag">NEW</span>
+                            <img src="images/bracelets2.jpg" alt="Golden Chain Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>Golden Chain Bracelet</h3>
+                            <p>A classic golden chain bracelet.</p>
+                            <strong>PKR 700</strong>
+                            <button class="add-cart" data-name="Golden Chain Bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelets3.jpg" alt="Pearl Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pearl Bracelet</h3>
+                            <p>Elegant pearl-inspired bracelet.</p>
+                            <strong>PKR 599</strong>
+                            <button class="add-cart" data-name="Pearl Bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelets5.jpg" alt="Charm Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>Charm Bracelet</h3>
+                            <p>A stylish charm bracelet for a modern look.</p>
+                            <strong>PKR 399</strong>
+                            <button class="add-cart" data-name="Charm Bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelet4.jpg" alt="Pearl Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>emerald square bead bracelet</h3>
+                            <p>cute and elegant look for everyday wear.</p>
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="emerald square bead bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelet6.jpg" alt="heart chain bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>heart chain bracelet</h3>
+                            <p>look beautiful everyday .</p>
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="heart chain bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelet9.jpg" alt="Pearl Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>gold plated star bracelet</h3>
+                            <p>shine bright with a touch of starlight.</p>
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="gold plated star bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelet10.jpg" alt="Pearl Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>bow bracelet</h3>
+                            <p>Elegant bracelet for a timeless touch.</p>
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="bow bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+                     <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/bracelet7.jpg" alt="Pearl Bracelet">
+                        </div>
+                        <div class="product-info">
+                            <h3>crystal bow pearl bracelet</h3>
+                            <p>premium bracelet for make you shine</p>.
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="bow bracelet">Add to Cart</button>
+                        </div>
+                    </article>
+        </section>
+
+
+        <!-- EARRINGS -->
+        <section class="product-section" id="earrings">
+
+            <div class="section-heading">
+                <p class="eyebrow">COLLECTION</p>
+                <h2>Earrings</h2>
+            </div>
+
+            <div class="products-wrapper">
+
+
+
+                <div class="products-container" id="earringProducts">
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <span class="tag">POPULAR</span>
+                            <img src="images/earring1.jpg" alt="Elegant Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>Elegant Earrings</h3>
+                            <p>Beautiful earrings with a graceful finish.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="Elegant Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring2.jpg" alt="Classic Hoops">
+                        </div>
+                        <div class="product-info">
+                            <h3>bow earing</h3>
+                            <p>Timeless hoops that pair with every outfit.</p>
+                            <strong>PKR 699</strong>
+                            <button class="add-cart" data-name="bow earing">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring3.jpg" alt="butterfly Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>butterfly Earrings</h3>
+                            <p>Elegant earrings designed to add atouch of sparkle.</p>
+                            <strong>PKR 899</strong>
+                            <button class="add-cart" data-name="butterfly Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring4.jpg" alt="korean Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>korean Earrings</h3>
+                            <p>korean earrings for make your looks better</p>
+                            <strong>PKR 1099</strong>
+                            <button class="add-cart" data-name="korean Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earrings5.jpg" alt="bluebell Pearl Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3> bluebell Pearl Earrings</h3>
+                            <p>beautiful earrings that add effortless elegance and sparkle.</p>
+                            <strong>PKR 1300</strong>
+                            <button class="add-cart" data-name="bluebell Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring6.jpg" alt="Pearl Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>flower korean  Earrings</h3>
+                            <p>best for every occasion.</p>
+                            <strong>PKR 599</strong>
+                            <button class="add-cart" data-name="Pearl Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earing7.jpg" alt="Pearl Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>heart shape  Earrings</h3>
+                            <p>Elegant pearl-inspired earrings.</p>
+                            <strong>PKR 1000</strong>
+                            <button class="add-cart" data-name="Pearl Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring8.jpg" alt="Pearl Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pearl Earrings</h3>
+                            <p>korean heart earrings with movable tassel.</p>
+                            <strong>PKR 799</strong>
+                            <button class="add-cart" data-name="Pearl Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="images/earring9.jpg" alt="Pearl Earrings">
+                        </div>
+                        <div class="product-info">
+                            <h3> korean bow tulip drop Earrings</h3>
+                            <p>korean tuilp cute earrings with movable tassel.</p>
+                            <strong>PKR 799</strong>
+                            <button class="add-cart" data-name="tulip drop Earrings">Add to Cart</button>
+                        </div>
+                    </article>
+
+    
+
+        
+        </section>
+
+    </main>
+
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="reviews-section" id="reviews">
+
+        <div class="section-heading">
+            <p class="eyebrow">CUSTOMER LOVE</p>
+            <h2>What Our Customers Say</h2>
+            <p>Real feedback from our customers.</p>
+        </div>
+
+        <div class="reviews-grid">
+
+            <div class="review-card">
+                <img src="images/review1.jpg" alt="Customer Review">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review2.jpg" alt="Customer WhatsApp Review">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review3.jpg" alt="Customer WhatsApp Review">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review4.jpg" alt="Customer WhatsApp Review">
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+            <img src="images/banner.jpg" alt="Gem By Fam">
+        </div>
+
+        <div class="about-content">
+            <p class="eyebrow">ABOUT GEM BY FAM</p>
+
+            <h2>Elegance Meets Everyday Luxury</h2>
+
+            <p>
+                Gem by fam is a jewelry brand created for people who love
+                beautiful pieces that feel elegant, effortless and easy to wear.
+            </p>
+
+            <p>
+                Our thoughtfully curated collection is designed to help you
+                feel confident, beautiful and unforgettable every day.
+            </p>
+
+            <a href="#contact" class="dark-btn">GET IN TOUCH</a>
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact Gem By Fam</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <div class="contact-icon">☎</div>
+                <h3>Call Us</h3>
+                <a href="tel:03332533115">0333 2533115</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/923332533115" target="_blank">
+                    Chat With Us
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">◎</div>
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/gem_by_fam/" target="_blank">
+                    @gem_by_fam
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Delivery</h3>
+                <p>All over Karachi</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INFO STRIP ================= -->
+    <section class="info-strip">
+
+        <div>
+            <strong>DELIVERY</strong>
+            <span>All over Karachi</span>
+        </div>
+
+        <div>
+            <strong>PAYMENT</strong>
+            <span>Cash on Delivery & Online</span>
+        </div>
+
+        <div>
+            <strong>RETURNS</strong>
+            <span>No Return / Exchange</span>
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-logo">GEM BY FAM</div>
+
+        <p>
+            Where elegance meets everyday luxury.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Gem By Fam. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+    <a class="whatsapp-float" href="https://wa.me/923332533115" target="_blank" title="Chat on WhatsApp">
+        ☎
+    </a>
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-box">
+
+        <button class="close-cart" id="closeCart">✕</button>
+
+        <p class="eyebrow">YOUR BAG</p>
+        <h2>Shopping Cart</h2>
+
+        <div id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+        </button>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
