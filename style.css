@@ -134,7 +134,6 @@ button {
 .cart-button{
     position: relative;
     cursor:pointer;
-    z-index: index 100;
     pointer-events: auto;
 }
 .cart-button span {
@@ -362,7 +361,9 @@ button {
     display: flex;
     align-items: center;
 }
-
+#categories .eyebrow {
+    font-size: 15px;
+}
 .category-container {
     width: 100%;
     display: flex;
@@ -843,10 +844,15 @@ border-radius:4px;
 
 .cart-item {
     padding: 15px 0;
-    border-bottom: 1px solid var(--cream-dark);
+    border-bottom: none;
     font-size: 14px;
+    display:flex ;
+    border-bottom: none;
+    justify-content: space-between;
 }
-
+.cart-item::after{
+    display:none;
+}
 .empty-cart {
     padding: 25px 0;
     color: #82756b;
@@ -861,7 +867,13 @@ border-radius:4px;
     color: white;
     letter-spacing: 1px;
 }
-
+.remove-cart{
+    border:none;
+    background:transparent;
+    color: #3e3025;
+    cursor:pointer;
+    font-size: 14px;
+}
 
 /* =========================================
    RESPONSIVE
@@ -1064,5 +1076,300 @@ border-radius:4px;
     font-size: 20px;
 }
 .eyebrow{
-    font-size: 12px;
+    font-size: 12px
+}
+/* =========================================
+   NEW ARRIVALS
+   SEPARATE DESIGN
+========================================= */
+
+.new-arrivals {
+    width: 100%;
+    background: #eee3d2;
+    padding: 65px 0 70px;
+    overflow: hidden;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.new-arrivals-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 35px;
+}
+
+.new-arrivals-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: normal;
+    color: var(--brown);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.new-arrivals-heading span {
+    color: var(--gold);
+    font-size: 30px;
+}
+
+
+/* ---------- WRAPPER ---------- */
+
+.new-arrivals-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 55px;
+}
+
+
+/* ---------- HORIZONTAL CONTAINER ---------- */
+
+.new-arrivals-container {
+    width: 150%;
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 10px 500px 10px;
+    scroll-padding-left:20px ;
+    scroll-padding-right:20px ;
+}
+
+.new-arrivals-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ---------- CARD ---------- */
+
+.new-card {
+    flex: 0 0 230px;
+    width: 234px;
+    background: var(--white);
+    border: 1px solid rgba(176, 138, 87, 0.18);
+    box-shadow: 0 8px 25px rgba(62, 48, 37, 0.10);
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.new-image {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    background: #fff;
+    padding: 10px;
+}
+
+.new-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ---------- NEW TAG ---------- */
+
+.new-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    background: var(--brown);
+    color: white;
+    padding: 6px 9px;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+
+/* ---------- INFO ---------- */
+
+.new-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.new-info h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    min-height: 42px;
+    margin-bottom: 7px;
+    color: var(--brown);
+}
+
+.new-info strong {
+    display: block;
+    color: var(--gold);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+
+/* ---------- CART BUTTON ---------- */
+
+.new-info .add-cart {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid var(--brown);
+    background: transparent;
+    color: var(--brown);
+    font-size: 9px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.new-info .add-cart:hover {
+    background: var(--brown);
+    color: white;
+}
+
+
+/* ---------- SMALL ARROWS ---------- */
+
+.new-arrow {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    background: var(--cream);
+    color: var(--brown);
+    font-size: 25px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    z-index: 20;
+    box-shadow: 0 5px 15px rgba(62, 48, 37, 0.15);
+}
+
+.new-arrow:hover {
+    background: var(--brown);
+    color: white;
+}
+
+.new-left {
+    left: 8px;
+}
+
+.new-right {
+    right: 8px;
+}
+
+
+/* =========================================
+   NEW ARRIVALS MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .new-arrivals {
+        padding: 45px 0 50px;
+    }
+
+    .new-arrivals-heading {
+        margin-bottom: 25px;
+        gap: 9px;
+    }
+
+    .new-arrivals-heading h2 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .new-arrivals-heading span {
+        font-size: 14px;
+    }
+
+    .new-arrivals-wrapper {
+        padding: 0 38px;
+    }
+
+    .new-arrivals-container {
+        gap: 12px;
+        padding-bottom: 15px;
+        scroll-padding-right: 180px;
+        padding-left:15px; 
+        padding-right:15px ;
+    }
+
+    .new-card {
+        flex: 0 0 185px;
+        width: 185px;
+    }
+
+    .new-image {
+        height: 190px;
+        padding: 8px;
+    }
+
+    .new-info {
+        padding: 12px;
+    }
+
+    .new-info h3 {
+        font-size: 15px;
+        min-height: 38px;
+    }
+
+    .new-info strong {
+        font-size: 14px;
+    }
+
+    .new-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .new-left {
+        left: 5px;
+    }
+
+    .new-right {
+        right: 5px;
+    }
+    
+
+}
+/* BRACELETS SECTION - WHITE */
+section#bracelets
+{
+    background: #f8f3eb !important;
+}
+
+section#bracelets .products-wrapper {
+    background: #f8f3eb !important;
+}
+
+section#bracelets .products-container {
+    background: #f8f3eb !important;
+}
+ 
+#rings .section-heading h2{
+    font-size: 50px;
+}
+#bracelets .section-heading h2{
+    font-size: 50px;
+}
+#bracelets .section-heading p{
+    font-size: 14px;
+}
+#ringproducts .product-info p {
+    color:3e3025;
 }
