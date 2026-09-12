@@ -378,8 +378,8 @@ button {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    padding:10px 0 ;
-    justify-content:flex-start;
+    padding:20px 10px;
+    justify-content:center;
     overflow-y:hidden ;
 
 }
