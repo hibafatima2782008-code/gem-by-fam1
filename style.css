@@ -378,12 +378,19 @@ button {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    padding:20px 10px;
-    justify-content:center;
+    padding:0 10px;
+    justify-content:space-evenly;
     overflow-y:hidden ;
+    flex-wrap: wrap;
+    margin:0 auto;
 
 }
+.category-item{
+    width:180px;
+    display:flex;
+    align-items: center;
 
+}
 .category-container::-webkit-scrollbar {
     display: none;
 }
@@ -568,7 +575,7 @@ border-radius:4px;
 ========================================= */
 
 .reviews-section {
-    padding: 90px 5%;
+    padding: 30px 5%;
     background: var(--cream);
 }
 
@@ -1376,4 +1383,8 @@ section#bracelets .products-container {
 }
 #ringproducts .product-info p {
     color:3e3025;
+}
+#earrings{
+    margin-bottom: 14px;
+    padding-bottom:0px;
 }
