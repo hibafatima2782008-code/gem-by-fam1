@@ -381,7 +381,7 @@ button {
     padding:0 10px;
     justify-content:space-evenly;
     overflow-y:hidden ;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin:0 auto;
 
 }
@@ -389,6 +389,7 @@ button {
     width:180px;
     display:flex;
     align-items: center;
+    
 
 }
 .category-container::-webkit-scrollbar {
